@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Merriweather:ital,wght@0,400;0,700;1,400&family=Open+Sans:wght@800&family=Work+Sans:wght@700&display=swap');
+
+* {
+    font-family: 'Work Sans', sans-serif;
+}
+
+body{
+    margin: 0;
+}
+
+main, footer{
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 60px;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    gap: 10px;
+
+
+}
+
+nav li {
+    list-style: none;
+    margin-right: 30px;
+    font-weight: 500;
+    /* font-size: 18px; */
+    font-size: 1rem;
+
+}
+
+nav li a {
+    text-decoration: none;
+    color: rgba(66, 66, 66, 1);
+
+
+}
+
+
+
+.banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+
+}
+
+.banner h3 {
+    font-size: 3rem;
+    font-weight: 600;
+    color: rgba(19, 19, 19, 1);
+    
+    margin-bottom: 0;
+}
+
+.banner p {
+    color: rgba(114, 114, 114, 1);
+    font-size: 15px;
+    
+}
+
+button {
+    background: #E02C6D;
+    color: #FFF;
+    border-radius: 50px;
+    padding: 10px 25px;
+    font-size: .75rem;
+    font-weight: 300;
+    border: 0;
+}
+
+.banner-img img {
+    width: 100%;
+}
+
+.banner-img {
+    background-image: url('images/Circledesign.svg');
+    background-size: cover;
+}
+
+.sell-site {
+    margin: 55px auto;
+
+}
+
+.sell-site-img {
+    display: flex;
+    justify-content: space-around
+}
+
+.popular-sell {
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    /* justify-content: center; */
+
+
+
+}
+
+.photo-card {
+    width: auto;
+
+}
+
+.photo-card h4 {
+    margin-top: 6px;
+    margin-bottom: 10px;
+
+    /* height: 40px; */
+
+}
+
+.photo-card h6 {
+    margin-top: 0;
+    margin-bottom: 5px;
+
+
+}
+
+.photo-card p {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: rgb(120, 120, 133);
+    font-size: 14px;
+    text-align: left;
+
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
+    margin-top: 50px;
+
+
+
+}
+
+.features-content h2 {
+    width: 610px;
+    font-size: 38px;
+}
+
+.features-content p {
+    width: 500px;
+    color: rgb(108, 108, 108);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+
+
+.features,
+.popular-sell,
+.sell-site {
+    padding: 0 200px;
+}
+
+footer {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    height: 300px;
+
+
+
+}
+
+.footer-content {
+    /* margin: auto ; */
+    /* align-items: center; */
+   
+}
+
+footer h2 {
+    color: rgb(217, 219, 225);
+    margin-top: 50px;
+    margin-bottom: 5px;
+}
+
+footer h3 {
+    color: rgb(193, 194, 196);
+    font-size: 10px;
+
+}
+
+footer h4 {
+    color: rgb(197, 198, 201);
+    /* margin: 10px; */
+    font-size: 10px;
+}
+
+.footer-img {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+
+}
+
+footer img {
+    width: 20px;
+    height: 20px;
+}
+
+
+
+
+@media screen and (max-width: 576px) {
+
+    nav,
+    nav ul,
+    .features {
+        flex-direction: column;
+    }
+
+    .banner {
+        flex-direction: column-reverse;
+    }
+
+    .banner button {
+        justify-content: center;
+    }
+
+    main{
+        /* padding: 0 5px; */
+    }
+
+    .banner-content h3,
+    .banner-content  p {
+        font-size: 1rem;
+        
+    }
+
+    
+
+    .sell-site-img {
+        display: grid;
+        grid-template-columns: repeat(4, 2fr);
+        gap: 10px;
+        margin: 0 auto;
+    }
+
+
+    .popular-sell {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .photo-card {
+
+        margin: 0 auto;
+
+    }
+
+    .photo-card-content{
+        width: 100%;
+
+    }
+
+    
+
+    .features,  .popular-sell, .sell-site {
+        padding: 0;
+    }
+
+    .display{
+        display: none;
+    }
+
+    footer{
+        max-width:  100%;
+        /* background-color: #E02C6D; */
+        /* width: 100%; */
+    }
+
+    main, footer{
+        padding: 0;
+    }
+}
